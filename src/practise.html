@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .item-1 {
+            flex: 1 2 100px;
+            background-color: #FF5733;
+            padding: 10px;
+            color: white;
+        }
+
+        .item-2 {
+            flex: 2 1 200px;
+            background-color: #33FF57;
+            padding: 10px;
+            color: white;
+        }
+
+        .item-3 {
+            flex: 1 1 150px;
+            background-color: #5733FF;
+            padding: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="flex-basis-1 bg-red-500 p-4">Basis 1</div>
+        <div class="flex-basis-2 bg-blue-500 p-4">Basis 2</div>
+        <div class="flex-basis-3 bg-green-500 p-4">Basis 3</div>
+      </div>
+</body>
+</html>

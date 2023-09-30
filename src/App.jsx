@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Intro from './components/Intro'
 import Portfolio from './components/Portfolio'
@@ -11,11 +11,14 @@ function App() {
   return (
     <>
       <div className="text-gray-700">
-       <Intro></Intro>
-       <Contact/>
-       <Footer/>
+     
+        <Intro/>
        <Portfolio/>
        <Timeline/>
+       <Contact/>
+       <Footer/>
+
+
       </div>
     </>
   )

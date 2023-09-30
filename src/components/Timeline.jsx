@@ -5,7 +5,8 @@ import Timelineitem from "./Timelineitem";
 
 function Timeline() {
     return(
-            <div className="flex flex-col md:flex-row items-center justify-center my-20 w-full md:7/12">
+            <div className="flex flex-col md:flex-row items-center justify-center my-20 ">
+                    <div className="w-full md:7/12">
                     {timeline.map(item =>( 
                         <Timelineitem 
                         year = {item.year}
@@ -14,6 +15,7 @@ function Timeline() {
                         details = {item.details}
                         />
                     ))}
+                    </div>
 
             </div> 
         )
